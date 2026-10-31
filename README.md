@@ -1,16 +1,60 @@
-# React + Vite
+# Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive currency converter built with **React** and **Vite**. The application fetches exchange rates from the Navasan API and allows users to convert amounts between supported currencies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Convert amounts between supported currencies
+- Select source and target currencies
+- Swap currencies with a single click
+- Fetch exchange rates from an external API
+- Display the converted amount
+- Manage input and conversion results using React state
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Follow these steps to run the project locally.
 
-## Expanding the ESLint configuration
+### 1. Clone the repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/yegane/currency-converter.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd currency-converter
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file in the root directory and add your API key:
+
+```env
+VITE_API_KEY=your_api_key_here
+```
+
+Replace `your_api_key_here` with your Navasan API key.
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+## API
+
+Exchange rate data is provided by the [Navasan API](https://www.navasan.tech/).
+
+## Author
+
+**Yegane Almasi**
+
+GitHub: [@yegane](https://github.com/yegane)
